@@ -1,10 +1,10 @@
-const sefinCipher = require('../index.js');
+const SefinCipher = require('../index.js');
 
-const originalText = 'AbCdEfGhIjKlMnOpQrStUvWxYz';
+const originalText = 'AbCdEfGhIjKlMnOpQrStUvWxYz Hello World! AbCdEfGhIjKlMnOpQrStUvWxYz';
 console.log(`originalText: ${originalText}\n`);
 
-const encodedText = sefinCipher.sef3.encode(originalText);
+const encodedText = SefinCipher.sef3.encode(originalText);
 console.log(`sef3.encode() ${encodedText}\n`);
 
-const decodedText = sefinCipher.sef3.decode(encodedText);
+const decodedText = SefinCipher.sef3.decode(encodedText);
 console.log(`sef3.decode() ${decodedText}`);

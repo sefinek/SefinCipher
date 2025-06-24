@@ -56,22 +56,19 @@ const cipherMap = new Map([
 	['!', '[!]'],
 ]);
 
-const sefinCipher = {
-	encode: (text) => {
+module.exports = {
+	encode: text => {
 		return text
 			.split('')
 			.map((char) => cipherMap.get(char) || char)
 			.join('.s3,');
 	},
 
-	decode: (text) => {
+	decode: text => {
 		const decipherMap = new Map([...cipherMap.entries()].map(([k, v]) => [v, k]));
-
 		return text
 			.split('.s3,')
 			.map((cipher) => decipherMap.get(cipher) || cipher)
 			.join('');
 	},
 };
-
-module.exports = sefinCipher;
