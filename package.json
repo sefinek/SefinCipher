@@ -16,13 +16,13 @@
     "sefin",
     "sefin-cipher"
   ],
-  "homepage": "https://github.com/sefinek24/SefinCipher#readme",
+  "homepage": "https://github.com/sefinek/SefinCipher#readme",
   "bugs": {
-    "url": "https://github.com/sefinek24/SefinCipher/issues"
+    "url": "https://github.com/sefinek/SefinCipher/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sefinek24/SefinCipher.git"
+    "url": "git+https://github.com/sefinek/SefinCipher.git"
   },
   "license": "MIT",
   "author": "Sefinek <contact@sefinek.net> (https://sefinek.net)",
